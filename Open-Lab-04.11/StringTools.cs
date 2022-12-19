@@ -6,7 +6,10 @@ namespace Open_Lab_04._11
     {
         public string AlphabetSoup(string str)
         {
-            throw new NotImplementedException();
+           char[] chars=str.ToCharArray();
+           Array.Sort(chars);
+           string result= new string(chars);
+           return result;
         }
     }
 }
